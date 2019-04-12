@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tool_name=("findcpp")
+tool_name=("findcpp" "codecount")
 dest_dir="tools"
 script_dir=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
 
