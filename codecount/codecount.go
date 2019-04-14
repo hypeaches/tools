@@ -96,13 +96,12 @@ func ReadLine(filename string, hookfn func([]byte)) {
 	rd := bufio.NewReader(file)
 	for {
 		line, err := rd.ReadBytes('\n')
+		hookfn(line)
 		if err == io.EOF {
 			return
 		}
 		if err != nil {
 			panic(err)
 		}
-
-		hookfn(line)
 	}
 }
