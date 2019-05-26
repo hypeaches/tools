@@ -1,0 +1,25 @@
+{
+    "driver": "mysql",
+    "server": {
+        "ip": "127.0.0.1",
+        "port": 3306,
+        "user": "lx",
+        "password": "123456"
+    },
+    "database": {
+        "db": "order_list",
+        "table": "orders",
+        "field": {
+            "username": "lx",
+            "riderid": "123"
+        },
+        "data": [
+            {
+                "orderid": "112233"
+            },
+            {
+                "orderid": "223344"
+            }
+        ]
+    }
+}

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tool_name=("findcpp" "codecount")
+tool_name=("codecount" "dig" "findcpp")
 dest_dir="tools"
 script_dir=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
 
@@ -14,6 +14,7 @@ mkdir $tool_dir
 for tool in ${tool_name[@]}
 do
     cd $script_dir/$tool
+    echo "build: $tool"
     go build $tool.go
     if [ -f $tool ]
     then
