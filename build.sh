@@ -2,6 +2,8 @@
 
 tool_name=("codecount" "dig" "findcpp")
 dest_dir="tools"
+
+# 构建脚本
 script_dir=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
 
 tool_dir=$script_dir/$dest_dir
