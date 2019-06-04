@@ -49,7 +49,7 @@ def init_value_str():
 def get_insert_sql():
     db_name = conf["database"]["db"]
     table_name = conf["database"]["table"]
-    table = db_name + "." + table_name
+    table = "`" + db_name + "`.`" + table_name + "`"
     global field_str
     global value_str
     insert_sql = "insert into {} ({}) values {}".format(table, field_str, value_str)
